@@ -1,9 +1,13 @@
 import PySimpleGUI as sg
 import ImageProcessing as ip
-from PIL import Image, ImageTk
+from PIL import ImageTk
 
 
 class Main():
+    """
+    GUI 画像処理ソフトウェア
+    できることは彩度，コントラスト変更した時の画像の様子とその時のヒストグラムの表示
+    """
     def __init__(self):
         minSettingValue = 0.0  # 彩度，コントラスト変更のパラメータ下限
         maxSettingValue = 2.0  # 彩度，コントラスト変更のパラメータ上限
